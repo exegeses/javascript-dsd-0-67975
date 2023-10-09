@@ -35,3 +35,10 @@ nav{
         background-color: hsl(287, 55%, 70%);
         box-shadow: 0 0 8px hsl(287, 55%, 70%);;
     }
+
+#txt{
+    font-size: 2em;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: hsl(287, 55%, 20%);;
+}
