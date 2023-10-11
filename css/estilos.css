@@ -42,3 +42,36 @@ nav{
     border-radius: 8px;
     background-color: hsl(287, 55%, 20%);;
 }
+
+#caja{
+    width: 256px;
+    height: 256px;
+    background-color: #666;
+    border-radius: 16px;
+    padding: 24px 16px;
+    margin: 24px;
+}
+
+#selector{
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    position: relative;
+    top: 20px;
+    margin-right: 16px;
+    margin-left: 64px;
+}
+#btn{
+    text-decoration: none;
+    background-color: hsl(287, 55%, 60%);;
+    color: hsl(287, 55%, 100%);
+    display: inline-block;
+    padding: 8px 32px;
+    margin: 0px 4px;
+    border-radius: 8px;
+    border: none;
+}
+#btn:hover{
+    background-color: hsl(287, 55%, 70%);
+    box-shadow: 0 0 8px hsl(287, 55%, 70%);;
+}
