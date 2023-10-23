@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=white">
 
 > Curso Javascript desde 0 |  
-> Lunes y Miércoles de 08hs a 10hs |  
+> Lunes y Miércoles de 10hs a 12hs |  
 > desde el 27/09/2023 al 30/10/2023  |  
 > Código 67975 |  
 > sensei: Marcos Pinardi |  

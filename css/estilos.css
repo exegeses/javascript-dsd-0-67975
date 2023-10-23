@@ -50,6 +50,7 @@ nav{
     border-radius: 16px;
     padding: 24px 16px;
     margin: 24px;
+    transition: 500ms;
 }
 
 #selector{
