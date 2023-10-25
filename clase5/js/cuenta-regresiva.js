@@ -24,6 +24,26 @@ function cuentaRegresiva()
         //(y quetamos decimales)
     let segundos = Math.trunc( diferencia/1000 );
     console.log(segundos);
+    let minutos = Math.trunc(segundos/60);
+    console.log(minutos);
+    let horas = Math.trunc( minutos/60 );
+    console.log(horas);
+    let dias = Math.trunc( horas/24 );
+    console.log(dias);
+
+    /* calcualmos los tiempos restantes */
+    horas = horas % 24;
+    minutos = minutos % 60;
+    segundos = segundos % 60;
+    console.log(horas + ' horas ' + minutos + ' minutos ' + segundos + ' segundos');
+    console.log( `${horas} horas ${minutos} minutos ${segundos} segundos` );
+    
+
+    //imprimimos los tiempos en los span
+    txtDias.innerText = dias;
+    txtHoras.innerText = horas;
+    txtMinutos.innerText = minutos;
+    txtSegundos.innerText = segundos;
 }
 
 cuentaRegresiva();
