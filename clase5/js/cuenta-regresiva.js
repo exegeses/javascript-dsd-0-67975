@@ -1,11 +1,11 @@
 //ubicamos elementos dentro del DOM
-txtDias = document.querySelector('#txtDias');
-txtHoras = document.querySelector('#txtHoras');
-txtMinutos = document.querySelector('#txtMinutos');
-txtSegundos = document.querySelector('#txtSegundos');
-h1 = document.querySelector('h1');
+const txtDias = document.querySelector('#txtDias');
+const txtHoras = document.querySelector('#txtHoras');
+const txtMinutos = document.querySelector('#txtMinutos');
+const txtSegundos = document.querySelector('#txtSegundos');
+const h1 = document.querySelector('h1');
 
-
+let intervalo = '';
 
 //declaramos función de control
 function cuentaRegresiva()
@@ -35,6 +35,41 @@ function cuentaRegresiva()
     horas = horas % 24;
     minutos = minutos % 60;
     segundos = segundos % 60;
+
+
+    /*#########################*/
+    /*####interrumpir el intervalo####*/
+    // if( actual > final )
+    if( 
+        dias <= 0 && 
+        horas <= 0 && 
+        minutos <= 0 &&
+        segundos < 0  
+       ){
+        h1.innerText = 'Ya comenzó el ballotaje';
+        clearInterval( intervalo );
+        segundos = 0;
+        minutos = 0;
+        horas = 0;
+        dias = 0;
+    }
+
+
+    /* agregamos 0 (ceros) iniciales */
+        if(segundos < 10){
+            segundos = '0' + segundos;
+        }
+        if(minutos < 10){
+            minutos = '0' + minutos;
+        }
+        if(horas < 10){
+            horas = '0' + horas;
+        }
+        if(dias < 10){
+            dias = '0' + dias;
+        }
+
+
     console.log(horas + ' horas ' + minutos + ' minutos ' + segundos + ' segundos');
     console.log( `${horas} horas ${minutos} minutos ${segundos} segundos` );
     
@@ -47,4 +82,5 @@ function cuentaRegresiva()
 }
 
 cuentaRegresiva();
-
+intervalo = setInterval( cuentaRegresiva, 1000 );
+//clearInterval(  )
