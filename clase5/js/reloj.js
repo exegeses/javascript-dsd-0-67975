@@ -1,29 +1,32 @@
 const txt = document.querySelector('#txt');
-
+function agregarCero( numero )
+{
+    if( numero < 10 ){
+        numero = '0'+ numero;
+    }
+    return numero;
+}
 function reloj()
 {
     const fecha = new Date();
     //obtenemos el número de las horas
     let horas = fecha.getHours();
-    if( horas < 10 ){
-        horas = '0'+ horas;
-    }
+    horas = agregarCero( horas );
+
     //console.log( 'horas: ' + horas );
     console.log( `horas: ${horas}` );
 
     //obtenemos el número de los minutos
     let minutos = fecha.getMinutes();
-    if( minutos < 10 ){
-        minutos = '0'+ minutos;
-    }
+    minutos = agregarCero( minutos );
+
     //console.log( 'horas: ' + minutos );
     console.log( `minutos: ${minutos}` );
 
     //obtenemos el número de los segundos
     let segundos = fecha.getSeconds();
-    if( segundos < 10 ){
-        segundos = '0'+ segundos;
-    }
+    segundos = agregarCero( segundos );
+
     //console.log( 'horas: ' + segundos );
     console.log( `segundos: ${segundos}` );
 

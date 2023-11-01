@@ -8,6 +8,15 @@ const h1 = document.querySelector('h1');
 let intervalo = '';
 
 //declaramos función de control
+function agregarCero( numero )
+{
+    if( numero < 10 ){
+        numero = '0'+ numero;
+    }
+    return numero;
+}
+
+
 function cuentaRegresiva()
 {
     //creamos objetos de fecha
@@ -56,18 +65,11 @@ function cuentaRegresiva()
 
 
     /* agregamos 0 (ceros) iniciales */
-        if(segundos < 10){
-            segundos = '0' + segundos;
-        }
-        if(minutos < 10){
-            minutos = '0' + minutos;
-        }
-        if(horas < 10){
-            horas = '0' + horas;
-        }
-        if(dias < 10){
-            dias = '0' + dias;
-        }
+
+        segundos = agregarCero( segundos );
+        minutos = agregarCero( minutos );
+        horas = agregarCero( horas );
+        dias = agregarCero( dias );
 
 
     console.log(horas + ' horas ' + minutos + ' minutos ' + segundos + ' segundos');

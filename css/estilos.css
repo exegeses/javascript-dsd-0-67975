@@ -85,3 +85,30 @@ nav{
     /* display: none; */
     opacity: 0;
 }
+
+#selector{
+    width: 180px;
+    text-align: center;
+}
+    #selector input{
+        width: 48px;
+        height: 48px;
+        position: relative;
+        top: 14px;
+        margin-right: 4px;
+        border: none;
+        
+    }
+    #selector button{
+        text-decoration: none;
+        background-color: hsl(287, 55%, 60%);;
+        color: hsl(287, 55%, 100%);
+        display: inline-block;
+        padding: 8px 32px;
+        margin: 0px 4px;
+        border-radius: 8px;
+    }
+    #selector button:hover{
+        background-color: hsl(287, 55%, 70%);
+        box-shadow: 0 0 8px hsl(287, 55%, 70%);;
+    }
