@@ -112,3 +112,21 @@ nav{
         background-color: hsl(287, 55%, 70%);
         box-shadow: 0 0 8px hsl(287, 55%, 70%);;
     }
+
+#listaMarcas{
+    width: 380px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    #listaMarcas img{
+        filter: invert();
+        opacity: .75;
+        cursor: pointer;
+    }
+    #listaMarcas span{
+        font-size: 24px;
+    }
